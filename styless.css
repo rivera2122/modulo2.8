@@ -1,0 +1,148 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #d1f5f5;
+    color: #000000;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #009ffd, #2a2a72);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #05fff3;
+}
+
+/* Secciones principales */
+main {
+    padding: 50px 20px;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    color: #000000;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #10b6ae;
+    margin-bottom: 10px;
+}
+
+section#about-us p, section#services ul {
+    font-size: 1.1em;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+ul li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2a2a72;
+    color: #fc3131;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animaciones */
+header, footer {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Llamada a la acción (CTA) */
+.cta {
+    background-color: #ffcb05;
+    color: #2a2a72;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.cta:hover {
+    background-color: #00ff15;
+}
+
+/* Formulario de contacto */
+#contact-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #ffcb05;
+    color: #2a2a72;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #ffd700;
+}
